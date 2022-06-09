@@ -16,3 +16,104 @@
     color: #e43a3a;
 }
 
+.Zadatak{
+    background-color: goldenrod;
+    height: 76.5%;
+    border: solid rgb(158, 120, 25);
+    border-radius: 5px;
+    
+}
+
+
+h1{
+    text-align: center;
+    background-color: rgb(255, 211, 99);
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    color: black;
+    margin-top: 45px;
+}
+
+h2{
+    background-color: rgb(198, 255, 112);
+    color: rgb(0, 61, 0);
+    text-align: center;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    margin-top: 45px;
+    border: solid 3px rgb(0, 61, 0);
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.odgovori{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 65px;
+    
+}
+
+.odgovori input{
+    width: 105px;
+    font-size: xx-large;
+    margin-right: 25px;
+    margin-top: 35px;
+    background-color: aqua;
+}
+
+input:hover{
+    background-color: rgb(11, 115, 115);
+}
+
+.grafovi{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+    background-color: azure;
+    margin-top: 50px;
+    height: 250px;
+    border: 4px solid rgb(175, 187, 187);
+    border-radius: 4px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+}
+
+.time{
+    height: 30%;
+    width: 30%;
+    background-color: blueviolet;
+    margin-right: 25px;
+}
+
+.tasks{
+    height: 80%;
+    width: 30%;
+    background-color: rgb(16, 133, 228);
+    margin-right: 25px;
+}
+
+.success{
+    height: 60%;
+    width: 30%;
+    background-color: rgb(16, 228, 19);
+}
+
+.refr{
+    background-color: rgb(198, 255, 112);
+    color: rgb(0, 61, 0);
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 15px;
+    border: solid 3px rgb(0, 61, 0);
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
