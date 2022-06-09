@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Open Sans";
+    font-size: 16px;
+    background-image: url(pozadina.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    width: 45%;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.pocetna {
+    max-width: 50%;
+    margin: 0 auto;
+    line-height: 80px;
+    padding: 30px;
+}
+
+.pocetna h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.pocetna h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.linkovi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkovi a {
+    line-height: 20px;
+    border: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+form {
+    width: 25%;
+    margin: 0 auto;
+    background-color: white;
+    line-height: 50px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form input {
+    height: 50px;
+    line-height: 25px;
+    color: #000;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 25px;
+    background-color: #b8c6ff54;
+    margin-bottom: 10px;
+    padding: 0 25px;
+}
+
+form button {
+    font-weight: bold;
+    line-height: 50px;
+    background: linear-gradient(45deg, #21d4fd, #b721ff);
+    color: #fff;
+    margin-top: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.error {
+    color: red;
+}
+
+h1 {
+    padding: 20px 0;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
