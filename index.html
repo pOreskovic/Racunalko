@@ -1,12 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racunalko</title>
-</head>
-<body>
-   
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Racunalko</title>
+        <meta name="keywords" content="matematika, racunalko, zadaci">
+        <meta name="description" content="HTML11">
+        <meta name="author" content="Matilda Razum, JMBAG - 0246099429 ">
+        <link rel="stylesheet"  href="css.css" type="text/css"/>
+	</head>
+ 
+    <body>
+
+        <title>Quiz Questions And Answers</title>
+        <center><h1>Quiz Questions</h1></center>
+        <form name="quiz">
+
+        
+
+        <p>Question 1.</p>
+
+<br>Geometrija je -------------------- o tijelima.<br></p>
+
+<blockquote>
+
+<input type="radio" name="q1" value="opcija1"><br>
+
+<input type="radio" name="q1" value="opcija2"><br>
+
+<input type="radio" name="q1" value="opcija3"><br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 2.
+
+<br>Prosti brojevi su -------------------- .<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="obicni brojevi"><br>
+
+<input type="radio" name="q2" value="neobicni brojevi"><br>
+
+<input type="radio" name="q2" value="ne znam"><br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 3.
+
+<br>--------------------.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="example">come<br>
+
+<input type="radio" name="q3" value="example">comes<br>
+
+<input type="radio" name="q3" value="example">coming<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 4.
+
+<br> Pitanje-------------------- .<br></b>
+
+<blockquote>
+
+<input type="radio" name="q15" value="odgovor"><br>
+
+<input type="radio" name="q15" value="odgovor"><br>
+
+<input type="radio" name="q15" value="odgovor"><br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+
+
+<p><b>
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p>
+
+Number of score out of 15 = <input type= text size 15 name= "mark">
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+
+</form>
+
+<p>
+
+<form method="post" name="Form" onsubmit="" action="">
+
+</form>
+
 </body>
+
+<script>
+
+var numQues = 15;
+
+var numChoi = 3;
+
+var answers = new Array(4);
+
+answers[0] = "opcija1";
+
+answers[1] = "opcija2";
+
+answers[2] = "opcija";
+
+answers[3] = "opcija";
+
+answers[4] = "opcija";
+
+
+
+function getScore(form) {
+
+var score = 0;
+
+var currElt;
+
+var currSelection;
+
+for (i=0; i<numQues; i++) {
+
+currElt = i*numChoi;
+
+answered=false;
+
+for (j=0; j<numChoi; j++) {
+
+currSelection = form.elements[currElt + j];
+
+if (currSelection.checked) {
+
+answered=true;
+
+if (currSelection.value == answers[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+
+}
+
+var scoreper = Math.round(score/numQues*100);
+
+form.percentage.value = scoreper + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+</html>
+
+     </body>
 </html>
